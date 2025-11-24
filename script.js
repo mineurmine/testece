@@ -461,7 +461,7 @@ function showWinnerPopup(text) {
     popup.textContent = text;
     popup.classList.add('show');
     // Le délai est réduit à 2 secondes (ou ce que vous voulez) car le défilement n'est plus automatique
-    setTimeout(() => popup.classList.remove('show'), 2000); 
+    setTimeout(() => popup.classList.remove('show'), 6000); 
 }
 
 // Fonction de mise à jour du compteur
@@ -585,4 +585,5 @@ window.onload = () => {
     
     // Démarrer le jeu avec le compte à rebours pour la première question
     startscrren();
+
 };  
