@@ -59,217 +59,217 @@ function getRandomPhrase(phraseArray) {
 // =================================================================
 const allQuestions = [
     // Vrai/Faux version simple (type: vf)
-    { type: "vf", question: "Tenir la rampe réduit le risque de chute.", correct: true },
-    { type: "vf", question: "Descendre les escaliers en courant est plus dangereux que de les monter vite.", correct: true },
-    { type: "vf", question: "Pour aller plus vite, je peux monter deux marches à la fois lorsque je tiens la rampe sans augmenter mon risque de chute.", correct: false },
-    { type: "vf", question: "Les chutes dans les escaliers sont l’une des premières causes d’accident du travail.", correct: true },
-    { type: "vf", question: "Porter un gros objet qui cache la vue dans les escaliers augmente le risque de chute.", correct: true },
-    { type: "vf", question: "Marcher en talon dans un escalier est sans danger.", correct: false },
-    { type: "vf", question: "Une rampe doit être présente dès 3 marches selon les normes courantes.", correct: true },
-    { type: "vf", question: "Un escalier mal éclairé est un facteur de risque.", correct: true },
-    { type: "vf", question: "Regarder son téléphone en descendant les escaliers ne présente aucun danger.", correct: false },
-    { type: "vf", question: "Il est recommandé de descendre en posant uniquement la pointe des pieds.", correct: false },
-    { type: "vf", question: "Emprunter un escalier qui vient d’être laver ne présente pas plus de risque que d’habitude.", correct: false },
-    { type: "vf", question: "Monter un escalier en discutant avec un collègue distrait moins que le téléphone.", correct: false },
-    { type: "vf", question: "Les chutes d’escaliers concernent surtout les jeunes.", correct: false },
-    { type: "vf", question: "Les escaliers doivent avoir un contraste visuel clair sur la première et la dernière marche.", correct: true },
-    { type: "vf", question: "Poser des objets temporaires sur un escalier (sac, boîte) est sans risque.", correct: false },
-    { type: "vf", question: "Un escalier trop étroit augmente le risque de collision entre collègues.", correct: true },
-    { type: "vf", question: "Les mains courantes doivent idéalement être présentes des deux côtés d’un escalier.", correct: true },
-    { type: "vf", question: "Monter un escalier en tenant un parapluie ouvert ne présente pas de danger.", correct: false },
-    { type: "vf", question: "Les escaliers doivent toujours être libres de tout stockage temporaire.", correct: true },
-    { type: "vf", question: "Le marquage antidérapant sur le bord de marche est uniquement décoratif.", correct: false },
-    { type: "vf", question: "Monter un escalier en discutant au téléphone est aussi risqué que de descendre en regardant un téléphone.", correct: true },
-    { type: "vf", question: "Une rampe en métal froide en hiver peut être un facteur indirect de chute (on hésite à la tenir).", correct: true },
-    { type: "vf", question: "S’appuyer uniquement sur le mur est aussi sécuritaire que d’utiliser la rampe.", correct: false },
-    { type: "vf", question: "Les accidents dans les escaliers surviennent le plus souvent à la montée.", correct: false },
-    { type: "vf", question: "Un escalier extérieur doit être entretenu contre la pluie, le verglas et les feuilles mortes.", correct: true },
+    { type: "vf", question: "Tenir la rampe réduit le risque de chute?", correct: true },
+    { type: "vf", question: "Descendre les escaliers en courant est plus dangereux que de les monter vite?", correct: true },
+    { type: "vf", question: "Pour aller plus vite, je peux monter deux marches à la fois lorsque je tiens la rampe sans augmenter mon risque de chute?", correct: false },
+    { type: "vf", question: "Les chutes dans les escaliers sont l’une des premières causes d’accident du travail?", correct: true },
+    { type: "vf", question: "Porter un gros objet qui cache la vue dans les escaliers augmente le risque de chute?", correct: true },
+    { type: "vf", question: "Marcher en talon dans un escalier est sans danger?", correct: false },
+    { type: "vf", question: "Une rampe doit être présente dès 3 marches selon les normes courantes?", correct: true },
+    { type: "vf", question: "Un escalier mal éclairé est un facteur de risque?", correct: true },
+    { type: "vf", question: "Regarder son téléphone en descendant les escaliers ne présente aucun danger?", correct: false },
+    { type: "vf", question: "Il est recommandé de descendre en posant uniquement la pointe des pieds?", correct: false },
+    { type: "vf", question: "Emprunter un escalier qui vient d’être laver ne présente pas plus de risque que d’habitude?", correct: false },
+    { type: "vf", question: "Monter un escalier en discutant avec un collègue distrait moins que le téléphone?", correct: false },
+    { type: "vf", question: "Les chutes d’escaliers concernent surtout les jeunes?", correct: false },
+    { type: "vf", question: "Les escaliers doivent avoir un contraste visuel clair sur la première et la dernière marche?", correct: true },
+    { type: "vf", question: "Poser des objets temporaires sur un escalier (sac, boîte) est sans risque?", correct: false },
+    { type: "vf", question: "Un escalier trop étroit augmente le risque de collision entre collègues?", correct: true },
+    { type: "vf", question: "Les mains courantes doivent idéalement être présentes des deux côtés d’un escalier?", correct: true },
+    { type: "vf", question: "Monter un escalier en tenant un parapluie ouvert ne présente pas de danger?", correct: false },
+    { type: "vf", question: "Les escaliers doivent toujours être libres de tout stockage temporaire?", correct: true },
+    { type: "vf", question: "Le marquage antidérapant sur le bord de marche est uniquement décoratif?", correct: false },
+    { type: "vf", question: "Monter un escalier en discutant au téléphone est aussi risqué que de descendre en regardant un téléphone?", correct: true },
+    { type: "vf", question: "Une rampe en métal froide en hiver peut être un facteur indirect de chute (on hésite à la tenir)?", correct: true },
+    { type: "vf", question: "S’appuyer uniquement sur le mur est aussi sécuritaire que d’utiliser la rampe?", correct: false },
+    { type: "vf", question: "Les accidents dans les escaliers surviennent le plus souvent à la montée?", correct: false },
+    { type: "vf", question: "Un escalier extérieur doit être entretenu contre la pluie, le verglas et les feuilles mortes?", correct: true },
 
     // Vrai/Faux version complexe (type: vf)
-    { type: "vf", question: "Un escalier bien éclairé réduit les risques de chute, mais si l’on court pour rattraper un retard, l’éclairage seul ne suffit pas à garantir la sécurité.", correct: true },
-    { type: "vf", question: "Il est recommandé d’utiliser la rampe uniquement quand on descend un escalier, car en montée elle ne sert pas à la sécurité.", correct: false },
-    { type: "vf", question: "Un escalier muni de nez de marche contrastés est totalement sûr, même si on descend en regardant son téléphone.", correct: false },
-    { type: "vf", question: "La fatigue en fin de journée augmente le risque de chute, surtout à la descente où l’on a tendance à relâcher son attention.", correct: true },
-    { type: "vf", question: "Les chutes en escaliers surviennent principalement dans les escaliers extérieurs mal entretenus (pluie, verglas, feuilles).", correct: false },
-    { type: "vf", question: "Porter un objet encombrant dans les escaliers est dangereux même si l’objet est léger.", correct: true },
-    { type: "vf", question: "Il est toléré de poser temporairement un sac ou un carton sur une marche, à condition de rester à proximité.", correct: false },
-    { type: "vf", question: "On chute plus souvent dans des escaliers que l’on connaît bien, car on baisse sa vigilance.", correct: true },
-    { type: "vf", question: "En cas d’évacuation incendie, l’utilisation de l’ascenseur est interdite même si les escaliers sont encombrés.", correct: true },
-    { type: "vf", question: "Une seule marche plus haute ou plus basse que les autres peut suffire à provoquer un accident.", correct: true },
-    { type: "vf", question: "Descendre un escalier en tenant un café est sans danger si la tasse n’est pas pleine.", correct: false },
-    { type: "vf", question: "Une rampe trop large ou trop basse peut être inefficace pour prévenir une chute.", correct: true },
-    { type: "vf", question: "Les chaussures de sécurité suppriment le risque de chute dans les escaliers.", correct: false },
-    { type: "vf", question: "Le risque de chute dans un escalier est le même que l’on monte ou que l’on descende.", correct: false },
-    { type: "vf", question: "Un escalier propre et brillant peut être tout aussi dangereux qu’un escalier sale.", correct: true },
-    { type: "vf", question: "Regarder ses pieds en permanence en descendant l’escalier est la meilleure façon d’éviter une chute.", correct: false },
-    { type: "vf", question: "En portant un colis volumineux, il vaut mieux descendre de côté pour voir les marches.", correct: false },
-    { type: "vf", question: "Un téléphone peut être aussi dangereux qu’une marche cassée lorsqu’il détourne l’attention en escalier.", correct: true },
-    { type: "vf", question: "Lorsqu’on aménage un escalier, la largeur, la régularité des marches, l’éclairage et la présence de rampes sont des éléments déterminants pour la sécurité.", correct: true },
-    { type: "vf", question: "Il est toujours préférable de descendre deux marches à la fois pour gagner du temps, à condition de bien tenir la rampe.", correct: false },
+    { type: "vf", question: "Un escalier bien éclairé réduit les risques de chute, mais si l’on court pour rattraper un retard, l’éclairage seul ne suffit pas à garantir la sécurité?", correct: true },
+    { type: "vf", question: "Il est recommandé d’utiliser la rampe uniquement quand on descend un escalier, car en montée elle ne sert pas à la sécurité?", correct: false },
+    { type: "vf", question: "Un escalier muni de nez de marche contrastés est totalement sûr, même si on descend en regardant son téléphone?", correct: false },
+    { type: "vf", question: "La fatigue en fin de journée augmente le risque de chute, surtout à la descente où l’on a tendance à relâcher son attention?", correct: true },
+    { type: "vf", question: "Les chutes en escaliers surviennent principalement dans les escaliers extérieurs mal entretenus (pluie, verglas, feuilles)?", correct: false },
+    { type: "vf", question: "Porter un objet encombrant dans les escaliers est dangereux même si l’objet est léger?", correct: true },
+    { type: "vf", question: "Il est toléré de poser temporairement un sac ou un carton sur une marche, à condition de rester à proximité?", correct: false },
+    { type: "vf", question: "On chute plus souvent dans des escaliers que l’on connaît bien, car on baisse sa vigilance?", correct: true },
+    { type: "vf", question: "En cas d’évacuation incendie, l’utilisation de l’ascenseur est interdite même si les escaliers sont encombrés?", correct: true },
+    { type: "vf", question: "Une seule marche plus haute ou plus basse que les autres peut suffire à provoquer un accident?", correct: true },
+    { type: "vf", question: "Descendre un escalier en tenant un café est sans danger si la tasse n’est pas pleine?", correct: false },
+    { type: "vf", question: "Une rampe trop large ou trop basse peut être inefficace pour prévenir une chute?", correct: true },
+    { type: "vf", question: "Les chaussures de sécurité suppriment le risque de chute dans les escaliers?", correct: false },
+    { type: "vf", question: "Le risque de chute dans un escalier est le même que l’on monte ou que l’on descende?", correct: false },
+    { type: "vf", question: "Un escalier propre et brillant peut être tout aussi dangereux qu’un escalier sale?", correct: true },
+    { type: "vf", question: "Regarder ses pieds en permanence en descendant l’escalier est la meilleure façon d’éviter une chute?", correct: false },
+    { type: "vf", question: "En portant un colis volumineux, il vaut mieux descendre de côté pour voir les marches?", correct: false },
+    { type: "vf", question: "Un téléphone peut être aussi dangereux qu’une marche cassée lorsqu’il détourne l’attention en escalier?", correct: true },
+    { type: "vf", question: "Lorsqu’on aménage un escalier, la largeur, la régularité des marches, l’éclairage et la présence de rampes sont des éléments déterminants pour la sécurité?", correct: true },
+    { type: "vf", question: "Il est toujours préférable de descendre deux marches à la fois pour gagner du temps, à condition de bien tenir la rampe?", correct: false },
 
     // QCM (type: qcm) - QCM simples et complexes
     {
         type: "qcm",
-        question: "Quelle chaussure est la plus adaptée pour utiliser les escaliers ?",
-        answers: ["Talons hauts", "Tongs", "Chaussures fermées antidérapantes", "Escarpins à plateforme"],
+        question: "Quelle chaussure est la plus adaptée pour utiliser les escaliers?",
+        answers: ["Escarpins à plateforme", "Chaussures fermées antidérapantes", "Tongs", "Talons hauts"],
+        correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "Quelle est la 1ère chose à vérifier avant d’utiliser un escalier?",
+        answers: ["Si l'ascenseur est en panne", "Que la peinture soit sèche", "Que quelqu’un vous regarde", "Qu’il soit libre d’obstacles"],
+        correctIndex: 3
+    },
+    {
+        type: "qcm",
+        question: "Quelle est la meilleure façon de transporter un objet?",
+        answers: ["En le faisant glisser sur la rampe", "Sur la tête", "Une main libre pour la rampe", "Les deux mains occupées"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Quelle est la 1ère chose à vérifier avant d’utiliser un escalier ?",
-        answers: ["Qu’il soit libre d’obstacles", "Que quelqu’un vous regarde", "Que la peinture soit sèche", "Si l'ascenseur est en panne"],
-        correctIndex: 0
-    },
-    {
-        type: "qcm",
-        question: "Quelle est la meilleure façon de transporter un objet ?",
-        answers: ["Les deux mains occupées", "Une main libre pour la rampe", "Sur la tête", "En le faisant glisser sur la rampe"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Quelle conduite adopter si la lumière est éteinte ?",
-        answers: ["Continuer prudemment", "Allumer la lumière", "Utiliser son téléphone en marchant", "Faire demi-tour en courant"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Un collègue porte une grosse boîte qui cache sa vue :",
-        answers: ["Le dépasser rapidement", "Attendre ou proposer de l’aider", "Le suivre de près", "L'encourager à courir"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Que faire si un escalier est mouillé ?",
-        answers: ["Descendre vite pour ne pas glisser", "Ignorer et continuer", "Ralentir, signaler le danger, et chercher à nettoyer", "Se mettre à courir"],
+        question: "Quelle conduite adopter si la lumière est éteinte?",
+        answers: ["Faire demi-tour en courant", "Utiliser son téléphone en marchant", "Allumer la lumière", "Continuer prudemment"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Quelle est la bonne posture pour la sécurité dans un escalier ?",
-        answers: ["Regarder son téléphone", "Regarder devant soi", "Regarder ses pieds en permanence", "Descendre de côté"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Quand est-il le plus risqué d’utiliser les escaliers ?",
-        answers: ["Fatigue / inattention", "Juste après le repas", "En matinée", "En montant, sans objet"],
-        correctIndex: 0
-    },
-    {
-        type: "qcm",
-        question: "Où placer un objet lourd à stocker ?",
-        answers: ["Dans les escaliers", "Au sol dégagé", "Sur une marche", "Contre la rampe"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Quel élément de sécurité est indispensable dans la conception d'un escalier ?",
-        answers: ["Rampe", "Tapis décoratif", "Affiche murale de sécurité", "Nez de marche sans contraste"],
-        correctIndex: 0
-    },
-    {
-        type: "qcm",
-        question: "Que faire si la rampe est cassée ?",
-        answers: ["Continuer à l’utiliser avec prudence", "Signaler immédiatement l’incident", "Attendre qu’un autre la signale", "Utiliser l'autre côté même s'il n'y a pas de rampe"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Quelle règle respecter quand on est plusieurs dans les escaliers ?",
-        answers: ["Courir pour doubler", "Tenir sa droite / attendre son tour", "S’asseoir sur une marche pour se reposer", "Ne regarder que ses pieds"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Dans quel cas faut-il éviter les escaliers (et privilégier l'ascenseur ou l'aide) ?",
-        answers: ["En portant une charge volumineuse", "En montant sans rien", "Avec un collègue", "Si on porte un sac léger"],
-        correctIndex: 0
-    },
-    {
-        type: "qcm",
-        question: "Quel est le rôle d’un marquage jaune sur le bord d'une marche ?",
-        answers: ["Décoration", "Signal visuel pour éviter les chutes", "Repère d’entretien", "Indiquer la direction"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Pourquoi éviter les escaliers glissants (poussière, huile) ?",
-        answers: ["Pour l'esthétique", "Car cela présente un risque accru de chute", "C'est sans conséquence grave", "Car cela abîme les chaussures"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Tu transportes un colis encombrant et un collègue te propose de l’aider. Quelle est la MEILLEURE solution ?",
-        answers: ["Refuser, car le colis n’est pas très lourd", "Accepter pour avoir les mains libres et sécuriser ton équilibre", "Poser le colis et chercher un autre moyen (ascenseur, chariot)", "Descendre lentement et de côté"],
+        question: "Un collègue porte une grosse boîte qui cache sa vue?",
+        answers: ["L'encourager à courir", "Le suivre de près", "Attendre ou proposer de l’aider", "Le dépasser rapidement"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Tu observes un collègue qui descend en regardant son téléphone. Que fais-tu ?",
-        answers: ["Tu le laisses faire, il est responsable", "Tu l’avertis calmement du risque", "Tu attends qu’il ait fini avant de descendre derrière lui", "Tu te dépêches de le doubler"],
+        question: "Que faire si un escalier est mouillé?",
+        answers: ["Se mettre à courir", "Ralentir, signaler le danger, et chercher à nettoyer", "Ignorer et continuer", "Descendre vite pour ne pas glisser"],
         correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "Quelle est la bonne posture pour la sécurité dans un escalier?",
+        answers: ["Descendre de côté", "Regarder ses pieds en permanence", "Regarder devant soi", "Regarder son téléphone"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Quand est-il le plus risqué d’utiliser les escaliers?",
+        answers: ["En montant, sans objet", "En matinée", "Juste après le repas", "Fatigue / inattention"],
+        correctIndex: 3
+    },
+    {
+        type: "qcm",
+        question: "Où placer un objet lourd à stocker?",
+        answers: ["Contre la rampe", "Sur une marche", "Au sol dégagé", "Dans les escaliers"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Quel élément de sécurité est indispensable dans la conception d'un escalier?",
+        answers: ["Nez de marche sans contraste", "Affiche murale de sécurité", "Tapis décoratif", "Rampe"],
+        correctIndex: 3
+    },
+    {
+        type: "qcm",
+        question: "Que faire si la rampe est cassée?",
+        answers: ["Utiliser l'autre côté même s'il n'y a pas de rampe", "Attendre qu’un autre la signale", "Signaler immédiatement l’incident", "Continuer à l’utiliser avec prudence"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Quelle règle respecter quand on est plusieurs dans les escaliers?",
+        answers: ["Ne regarder que ses pieds", "S’asseoir sur une marche pour se reposer", "Tenir sa droite / attendre son tour", "Courir pour doubler"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Dans quel cas faut-il éviter les escaliers (et privilégier l'ascenseur ou l'aide)?",
+        answers: ["Si on porte un sac léger", "Avec un collègue", "En montant sans rien", "En portant une charge volumineuse"],
+        correctIndex: 3
+    },
+    {
+        type: "qcm",
+        question: "Quel est le rôle d’un marquage jaune sur le bord d'une marche?",
+        answers: ["Indiquer la direction", "Repère d’entretien", "Signal visuel pour éviter les chutes", "Décoration"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Pourquoi éviter les escaliers glissants (poussière, huile)?",
+        answers: ["Car cela abîme les chaussures", "C'est sans conséquence grave", "Car cela présente un risque accru de chute", "Pour l'esthétique"],
+        correctIndex: 2
+    },
+    {
+        type: "qcm",
+        question: "Tu transportes un colis encombrant et un collègue te propose de l’aider. Quelle est la MEILLEURE solution?",
+        answers: ["Descendre lentement et de côté", "Poser le colis et chercher un autre moyen (ascenseur, chariot)", "Accepter pour avoir les mains libres et sécuriser ton équilibre", "Refuser, car le colis n’est pas très lourd"],
+        correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "Tu observes un collègue qui descend en regardant son téléphone. Que fais-tu?",
+        answers: ["Tu te dépêches de le doubler", "Tu attends qu’il ait fini avant de descendre derrière lui", "Tu l’avertis calmement du risque", "Tu le laisses faire, il est responsable"],
+        correctIndex: 2
     },
     // QCM complexes transformés en QCM simple (avec la meilleure réponse)
     {
         type: "qcm",
-        question: "Vous descendez un escalier chargé d’un carton volumineux qui cache votre vue. Quelle est la meilleure conduite ?",
-        answers: ["Avancer lentement en tenant le carton des deux mains", "Tenter de descendre de côté pour voir les marches", "Repartir poser le carton et demander de l'aide ou utiliser un autre moyen", "Descendre le plus vite possible avant de trébucher"],
+        question: "Vous descendez un escalier chargé d’un carton volumineux qui cache votre vue. Quelle est la meilleure conduite?",
+        answers: ["Descendre le plus vite possible avant de trébucher", "Repartir poser le carton et demander de l'aide ou utiliser un autre moyen", "Tenter de descendre de côté pour voir les marches", "Avancer lentement en tenant le carton des deux mains"],
+        correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "Vous constatez que plusieurs marches sont légèrement glissantes après le nettoyage. Que faites-vous?",
+        answers: ["Vous attendez que le soleil sèche les marches", "Vous prévenez vos collègues et posez un panneau 'sol glissant'", "Vous descendez en utilisant les murs pour vous appuyer", "Vous descendez quand même prudemment"],
+        correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "En montant un escalier très fréquenté, quelle est la règle la plus importante pour la fluidité et la sécurité?",
+        answers: ["Les deux (Tenir sa droite ET Utiliser la rampe)", "Monter vite pour ne pas ralentir les autres", "Utiliser la rampe", "Tenir sa droite"],
+        correctIndex: 0
+    },
+    {
+        type: "qcm",
+        question: "Lors d’une coupure de courant, vous êtes à mi-escaliers. Quelle est la meilleure réaction?",
+        answers: ["S'asseoir et attendre que le courant revienne", "Remonter calmement jusqu’au palier et attendre des consignes", "Utiliser la lampe de votre téléphone et continuer", "Continuer lentement en vous tenant à la rampe"],
+        correctIndex: 1
+    },
+    {
+        type: "qcm",
+        question: "Vous portez un café et un ordinateur portable dans l’escalier. Quelle option est la plus sécuritaire?",
+        answers: ["Descendre de côté pour une meilleure vue", "Descendre sans la rampe pour avoir les deux mains libres", "Mettre l’ordinateur dans un sac et garder une main libre pour la rampe", "Tenir le café et l'ordinateur dans une main, la rampe dans l'autre"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Vous constatez que plusieurs marches sont légèrement glissantes après le nettoyage. Que faites-vous ?",
-        answers: ["Vous descendez quand même prudemment", "Vous descendez en utilisant les murs pour vous appuyer", "Vous prévenez vos collègues et posez un panneau 'sol glissant'", "Vous attendez que le soleil sèche les marches"],
+        question: "Dans un escalier extérieur verglacé, quelle est la bonne pratique?",
+        answers: ["Utiliser de la neige comme antidérapant", "Descendre le plus vite possible", "Attendre qu’il soit traité (sel/sable) et chercher un autre chemin sûr", "Descendre prudemment en tenant la rampe"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "En montant un escalier très fréquenté, quelle est la règle la plus importante pour la fluidité et la sécurité ?",
-        answers: ["Tenir sa droite", "Utiliser la rampe", "Monter vite pour ne pas ralentir les autres", "Les deux (Tenir sa droite ET Utiliser la rampe)"],
-        correctIndex: 3
-    },
-    {
-        type: "qcm",
-        question: "Lors d’une coupure de courant, vous êtes à mi-escaliers. Quelle est la meilleure réaction ?",
-        answers: ["Continuer lentement en vous tenant à la rampe", "Utiliser la lampe de votre téléphone et continuer", "Remonter calmement jusqu’au palier et attendre des consignes", "S'asseoir et attendre que le courant revienne"],
+        question: "Quelle(s) raison(s) explique(nt) le mieux que les chutes surviennent plus souvent à la descente?",
+        answers: ["On est souvent moins pressé en montant", "Les escaliers sont souvent plus sales en bas qu'en haut", "La vitesse, l'orientation de la vue et la fatigue s'accumulent", "La marche est moins haute à la descente"],
         correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Vous portez un café et un ordinateur portable dans l’escalier. Quelle option est la plus sécuritaire ?",
-        answers: ["Tenir le café et l'ordinateur dans une main, la rampe dans l'autre", "Mettre l’ordinateur dans un sac et garder une main libre pour la rampe", "Descendre sans la rampe pour avoir les deux mains libres", "Descendre de côté pour une meilleure vue"],
-        correctIndex: 1
+        question: "Tu accompagnes un visiteur qui porte des chaussures glissantes. Quelle est ta meilleure action?",
+        answers: ["Toutes ces actions sont de bonnes actions de prévention", "Lui proposer une paire de sur-chaussures ou de l'aide", "Lui proposer un ascenseur si disponible", "Lui rappeler de tenir la rampe et d’avancer lentement"],
+        correctIndex: 0
     },
     {
         type: "qcm",
-        question: "Dans un escalier extérieur verglacé, quelle est la bonne pratique ?",
-        answers: ["Descendre prudemment en tenant la rampe", "Attendre qu’il soit traité (sel/sable) et chercher un autre chemin sûr", "Descendre le plus vite possible", "Utiliser de la neige comme antidérapant"],
-        correctIndex: 1
+        question: "Quelle combinaison rend un escalier particulièrement dangereux?",
+        answers: ["Un escalier en bois ciré", "Rampe en métal et absence de nez de marche", "Marche irrégulière, manque d’éclairage, absence de rampe et sol glissant", "Marche régulière et bon éclairage"],
+        correctIndex: 2
     },
     {
         type: "qcm",
-        question: "Quelle(s) raison(s) explique(nt) le mieux que les chutes surviennent plus souvent à la descente ?",
-        answers: ["La marche est moins haute à la descente", "La vitesse, l'orientation de la vue et la fatigue s'accumulent", "Les escaliers sont souvent plus sales en bas qu'en haut", "On est souvent moins pressé en montant"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Tu accompagnes un visiteur qui porte des chaussures glissantes. Quelle est ta meilleure action ?",
-        answers: ["Lui rappeler de tenir la rampe et d’avancer lentement", "Lui proposer un ascenseur si disponible", "Lui proposer une paire de sur-chaussures ou de l'aide", "Toutes ces actions sont de bonnes actions de prévention"],
-        correctIndex: 3
-    },
-    {
-        type: "qcm",
-        question: "Quelle combinaison rend un escalier particulièrement dangereux ?",
-        answers: ["Marche régulière et bon éclairage", "Marche irrégulière, manque d’éclairage, absence de rampe et sol glissant", "Rampe en métal et absence de nez de marche", "Un escalier en bois ciré"],
-        correctIndex: 1
-    },
-    {
-        type: "qcm",
-        question: "Lors d’une évacuation incendie, quel comportement est le plus sûr ?",
-        answers: ["Descendre vite pour gagner du temps", "Tenir la rampe, garder le calme et suivre le flux", "Utiliser l’ascenseur si les escaliers sont encombrés", "S'arrêter pour s'assurer que tout le monde est là"],
-        correctIndex: 1
+        question: "Lors d’une évacuation incendie, quel comportement est le plus sûr?",
+        answers: ["S'arrêter pour s'assurer que tout le monde est là", "Utiliser l’ascenseur si les escaliers sont encombrés", "Tenir la rampe, garder le calme et suivre le flux", "Descendre vite pour gagner du temps"],
+        correctIndex: 2
     },
 ];
 
@@ -587,3 +587,4 @@ window.onload = () => {
     startscrren();
 
 };  
+
